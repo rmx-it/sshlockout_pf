@@ -246,6 +246,8 @@ main(int argc, char *argv[])
 			continue;
 		else if (check_for_string("Did not receive identification string", "sshlockout", buf, BLOCK))
 			continue;
+		else if (check_for_string("error: Received disconnect", "sshlockout", buf, BLOCK))
+			continue;
 		else if (check_for_string("Failed password for", "sshlockout", buf, BLOCK))
 			continue;
 		else if (check_for_string("Illegal user", "sshlockout", buf, BLOCK))
