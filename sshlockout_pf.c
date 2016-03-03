@@ -252,6 +252,8 @@ main(int argc, char *argv[])
 			continue;
 		else if (check_for_string("Invalid user", "sshlockout", buf, BLOCK))
 			continue;
+		else if (check_for_string("invalid user", "sshlockout", buf, BLOCK))
+			continue;
 		else if (check_for_string("Postponed keyboard-interactive for invalid user", "sshlockout", buf, BLOCK))
 			continue;
 #if defined(WEBCF)
